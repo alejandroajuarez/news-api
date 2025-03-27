@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   # root "posts#index"
   
   get "/articles" => "articles#index"
+
+  get "/auth/github/callback" => "github#authorize"
 end
